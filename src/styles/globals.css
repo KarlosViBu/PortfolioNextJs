@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --dark-color: #1b1b1b;
+   --light-color: #f5f5f5;
+ }
+
+ol {
+
+   color: '#1b1b1b';
+   color: '#f5f5f5';
+}
+
+ol{
+   @apply rounded text-green-900 text-lg translate-x-0
+}
+
+.boton1 {
+
+   @apply  flex items-center p-1 px-6 mr-3 rounded-3xl text-dark text-xl font-semibold 
+   ring-green-800 bg-white  border-dark shadow-md shadow-green-900
+    hover:text-light hover:border  hover:border-green-300
+   hover:bg-dark
+   
+   /* hover:ring-green-500     hover:ring-4 hover:ring-offset-2 */
+   
+   
+}
+.boton2 {
+   
+
+   @apply  flex items-center p-1 px-6 mr-3 rounded-3xl text-[#116311aa] text-xl font-semibold border border-solid border-[#1b1b1b] shadow shadow-[#4a4a] hover:shadow-lg hover:shadow-[#4a4a]
+   
+   
+}
+
+.boton3 {
+   @apply px-7 py-4 bg-black rounded-lg leading-none flex items-center
+}
+
+.blur1 {
+   @apply  bg-black rounded-lg 
+}
+
+
+
+.kshadow {
+   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   box-shadow: rgba(85, 91, 255, 0.0) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 1px 6px,  #4a4a 0px 6px 10px 2px;
+   
+   box-shadow: rgba(85, 91, 255, 0.0) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 1px 4px, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fcenter {
+   @apply  flex justify-center items-center
+}
+
+.caja {
+   @apply bg-white rounded-lg shadow-xl
+}
+
+@layer components {
+   .card {
+      @apply rounded-xl shadow-lg;
+   }
+
+   .card-text {
+      @apply  py-1 px-6  md:py-2 md:px-8 text-base font-bold md:text-xl  lg:text-2xl text-center text-primary
+      
+   }
+   .card-boton {
+      @apply hover:text-green-400 rounded-full shadow-md shadow-green-900 
+         hover:ring-4 hover:ring-green-800 hover:ring-offset-4  transition-all duration-300 ease-linear
+   }
+}
+
+.ktooltip {
+   position: relative;
+   display: inline-block;
+   border-bottom: 1px dotted black;
+
+   margin-left: -60px;
+   top: 150%;
+   left: 50%;
+}
+
+.ktooltip .tiptext::after{
+   margin-left: -5px;
+   bottom: 100%;
+   left: 50%;
+   border-color: transparent transparent #adb1b7 transparent;
+}
+
+
+.ktooltip .tiptext {
+   visibility: hidden;
+   font-size: .75rem;
+   line-height: .8rem;
+   width: 120px;
+   background-color: #d1d5db;
+   color: #887c7c;
+   text-align: center;
+   border-radius: 5rem;
+   padding: 6px 0;
+   position: absolute;
+   z-index: 1;
+   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+
+   margin-left: -60px;
+    top: 135%;
+    left: 50%;
+
+}
+.ktooltip .tiptext::after {
+   content: "";
+   position: absolute;
+   border-width: 5px;
+   border-style: solid;
+}
+.ktooltip:hover .tiptext {
+   visibility: visible;
+   border-bottom: 4px solid #adb1b7;
+   border-left: 4px solid #adb1b7;
+   border-right: 4px solid #adb1b7;
+}
+
+.tshadow12 {
+   /* color: #166534; */
+   text-shadow: -1px -1px 1px #ffffffbd, 
+                1px 1px 1px #ffffffbd,
+               2px 2px 2px #787676,
+               3px 3px 3px #6261616c;
+ }
+
+.tshadow14 {
+   /* color: #166534; */
+   text-shadow: -1px -1px 1px #000,  -1px -1px 1px #ffffff7b, 
+                1px 1px 1px #000,
+               2px 2px 2px #787676,
+               3px 3px 3px #6261616c,
+               3px 3px 3px #ece8e889;
+ }
+
+.tshadow111 {
+   /* color: #166534; */
+   text-shadow: -1px -1px 1px #4746465f, 
+                1px 1px 1px #0d0d0d7a,
+               2px 2px 2px #9b9797,
+               3px 3px 3px #6261616c;
+ }
