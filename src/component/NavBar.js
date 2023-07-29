@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import TwitterIcon, { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./icons";
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./icons";
 import { motion } from "framer-motion";
 import useThemeSwich from "./hooks/useThemeSwich";
 
@@ -29,11 +29,11 @@ const NavBar = () => {
       </nav>
 
       <nav className='flex justify-center items-center flex-wrap'>
-        <motion.a href="/" target={"_blank"} className='w-7 mr-2' whileHover={{ y:-2 }}
+        <motion.a href="https://github.com/KarlosViBu" target={"_blank"} className='w-7 mr-2' whileHover={{ y:-2 }}
         >
           <GithubIcon />
         </motion.a>
-        <motion.a href="/" target={"_blank"} className='w-6 ml-2' whileHover={{ y:-2 }}
+        <motion.a href="https://www.linkedin.com/in/" target={"_blank"} className='w-6 ml-2' whileHover={{ y:-2 }}
         >
           <LinkedInIcon />
         </motion.a>
