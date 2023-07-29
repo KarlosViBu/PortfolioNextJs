@@ -1,7 +1,7 @@
 import Layout from "@/component/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import karlos2 from "../../public/images/profile/karlos_2.png";
+// import karlos2 from "/public/images/profile/karlos_2.png";
 import AnimatedText from "@/component/AnimatedText";
 import Link from "next/link";
 import HireMe from "@/component/HireMe";
@@ -9,6 +9,7 @@ import HireMe from "@/component/HireMe";
 // import Kcard from "@/component/Kcard";
 
 export default function Home() {
+  const  karlos2="https://res.cloudinary.com/drxhdbob1/image/upload/v1690478306/karlos_2_g9tpa8.png"
   return (
     <>
       <Head>
@@ -20,7 +21,8 @@ export default function Home() {
       <Layout className="pt-0">
         <div className="flex justify-between items-center w-full">
           <div className="w-1/4 fcenter ml-20">
-            <Image
+            <img src={karlos2} width={'100%'} height={200} alt="adsd"/>
+            {/* <Image
               src={karlos2}
               alt="Carlos Villegas"
               className='w-full h-auto rounded-full'
@@ -28,7 +30,7 @@ export default function Home() {
               sizes="(max-width: 1200px) 50vw,
                      (max-width: 768px) 100vw,
                      33vw"
-            />
+            /> */}
           </div>
           <div className="w-1/2 flex flex-col self-center items-center">
             <AnimatedText

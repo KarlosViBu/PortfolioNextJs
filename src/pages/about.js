@@ -4,8 +4,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import AnimatedText from "@/component/AnimatedText";
 import Head from "next/head";
 import Layout from "@/component/Layout";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
-import karlos1 from "../../public/images/profile/karlos_1.png";
+// import karlos1 from "../../public/images/profile/karlos_1.png";
 import Skills from "@/component/Skills";
 import Experience from "@/component/Experience";
 import Studies from "@/component/Studies";
@@ -35,6 +34,7 @@ const AnimatedNumbers = ({ value }) => {
 };
 
 const about = () => {
+  const karlos1="https://res.cloudinary.com/drxhdbob1/image/upload/v1690478205/karlos_1_k16eqw.png"
   return (
     <>
       <Head>
@@ -67,7 +67,8 @@ const about = () => {
             <div
               className={`col-span-3 relative h-max rounded-3xl border p-8 ${"kshadow"}`}
             >
-              <Image
+              <img src={karlos1} width={'100%'} height={200} alt="adsd"/>
+              {/* <Image width={200} height={200}
                 src={karlos1}
                 alt="Carlos Villegas"
                 className="w-full h-auto"
@@ -75,7 +76,7 @@ const about = () => {
                 sizes="(max-width: 1200px) 50vw,
                      (max-width: 768px) 100vw,
                      33vw"
-              />
+              /> */}
             </div>
             <div className="col-span-2 flex flex-col items-end justify-evenly  text-primary">
               <div className="flex flex-col items-end justify-center">

@@ -5,8 +5,8 @@ import LiIcon from "./LiIcon";
 import Link from "next/link";
 import Modal from "./Modal";
 
-import diploma2 from "../../public/images/Studies/ContadorPublico.png";
-import diploma1 from "../../public/images/Studies/Diplomado_Web.png";
+// import diploma2 from "../../public/images/Studies/ContadorPublico.png";
+// import diploma1 from "../../public/images/Studies/Diplomado_Web.png";
 
 const Details = ({ programa, entidad, entLink, time, address }) => {
 
@@ -45,6 +45,8 @@ const Studies = () => {
   const [showModal1, setShowModal1] = useState(false)
   const [showModal2, setShowModal2] = useState(false)
   
+  const diploma1="https://res.cloudinary.com/drxhdbob1/image/upload/v1690600285/Diplomado_Web_wxoxpr.png"
+  const diploma2="https://res.cloudinary.com/drxhdbob1/image/upload/v1690600256/ContadorPublico_bebmie.png"
   return (
     <div className="my-40">
       <h2 className="font-bold text-6xl mb-32 w-full text-center tshadow14 text-primary">
@@ -70,14 +72,15 @@ const Studies = () => {
                Título
           </button>
           <Modal isVisible={showModal1} onClose={ () => setShowModal1(false)} >
-               <Image className='w-full h-auto fcenter' 
+              <img src={diploma1} width={'100%'} height={200} alt="adsd"/>
+               {/* <Image className='w-full h-auto fcenter' 
                   src={diploma1}
                   alt="Carlos Villegas" 
                   priority
                   sizes="(max-width: 1200px) 50vw,
                      (max-width: 768px) 100vw,
                      50vw"
-                  />
+                  /> */}
             </Modal>
           <Details
             programa="Contaduría Pública"
@@ -95,14 +98,15 @@ const Studies = () => {
           </button>
           <Modal isVisible={showModal2} onClose={ () => setShowModal2(false)} >
               <div className='fcenter bg-transparent' >
-               <Image className='w-[380px] h-auto rounded-3xl fcenter' 
+              <img src={diploma2} width={'60%'} height={200} alt="adsd"/>  
+               {/* <Image className='w-[380px] h-auto rounded-3xl fcenter' 
                   src={diploma2}
                   alt="Carlos Villegas" 
                   priority
                   sizes="(max-width: 1200px) 50vw,
                      (max-width: 768px) 100vw,
                      50vw"
-                  />
+                  /> */}
               </div>
           </Modal>
           <Details
