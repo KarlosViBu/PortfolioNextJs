@@ -62,6 +62,9 @@ const about = () => {
                 <br />
                 <p>
                   Siempre en continuo aprendisaje y mejoramiento. Ahora he retomado estudios en NestJs con TypeScript y Tailwind CSS.</p>
+                  <p>&nbsp;</p>
+                <p>
+                  Además practico y hago un proyecto en NuxtJs con TypeScript, Strapy, Apollo y GraphQL.</p>
               </div>
             </div>
             <div
