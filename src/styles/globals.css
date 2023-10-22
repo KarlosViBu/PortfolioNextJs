@@ -31,9 +31,8 @@ ol{
 }
 .boton2 {
    
-
    @apply  flex items-center p-1 px-6 mr-3 rounded-3xl text-[#116311aa] text-xl font-semibold border border-solid border-[#1b1b1b] shadow shadow-[#4a4a] hover:shadow-lg hover:shadow-[#4a4a]
-   
+ 
    
 }
 

@@ -33,7 +33,7 @@ const NavBar = () => {
         >
           <GithubIcon />
         </motion.a>
-        <motion.a href="https://www.linkedin.com/in/" target={"_blank"} className='w-6 ml-2' whileHover={{ y:-2 }}
+        <motion.a href="https://https://www.linkedin.com/in/carlos-uriel-villegas-buitrago-2662a4244" target={"_blank"} className='w-6 ml-2' whileHover={{ y:-2 }}
         >
           <LinkedInIcon />
         </motion.a>
